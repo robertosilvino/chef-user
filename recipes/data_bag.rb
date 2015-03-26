@@ -17,6 +17,10 @@
 # limitations under the License.
 #
 
+gem_package "ruby-shadow" do
+  action :install
+end
+
 bag = node['user']['data_bag_name']
 
 # Fetch the user array from the node's attribute hash. If a subhash is
